@@ -5,6 +5,7 @@ import shutil
 import gdown
 from src.configuration.config import ConfigurationManager
 from src.logger import logger
+from datetime import datetime
 
 class DataIngestion:
     def __init__(self):
@@ -37,10 +38,23 @@ class DataIngestion:
         
         half_kaggle=kaggle_data_df.iloc[:half_size]
         half_gdrive=gdrive_data_df.iloc[-half_size:]
+        half_kaggle["source"]="kaggle"
+        half_gdrive["source"]="gdrive"
+        half_kaggle["data_last_updated_dt"]=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        half_gdrive["data_last_updated_dt"]=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
-        combined_data=pd.concat([half_kaggle,half_gdrive],ignore_index=True)
-        logger.info("Dataset have been combined and moved to staging area under interim folder")
-        return combined_data.to_csv(self.config.staging_dataset+"Combined_dataset_churn_prediction.csv")
+        #combined_data=pd.concat([half_kaggle,half_gdrive],ignore_index=True)
+        #logger.info("Dataset have been combined and moved to staging area under interim folder")
+        #return combined_data.to_csv(self.config.staging_dataset+"Combined_dataset_churn_prediction.csv",index=False
+        """if(os.path.exists(self.config.staging_kaggle) and os.path.isdir(self.config.staging_kaggle)):
+            shutil.rmtree(self.config.staging_kaggle)
+        if(os.path.exists(self.config.staging_gdrive) and os.path.isdir(self.config.staging_gdrive)):
+            shutil.rmtree(self.config.staging_gdrive)
+        os.makedirs(self.config.staging_kaggle)
+        os.makedirs(self.config.staging_gdrive)
+        
+        return half_kaggle.to_csv(self.config.staging_kaggle+"raw_kaggle_churn_data.csv",index=False),half_gdrive.to_csv(self.config.staging_gdrive+"raw_gdrive_churn_data.csv",index=False)"""
+        return half_kaggle,half_gdrive
     
         
         

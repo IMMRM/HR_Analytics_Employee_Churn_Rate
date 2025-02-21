@@ -1,6 +1,7 @@
 from src.constants import CONFIG_PATH,PARAMS_PATH,SCHEMA_PATH
 from src.utils.common import read_yaml
 from src.entity.data_ingestion import DataIngestionConfig
+from src.entity.data_storage import DataStorageConnectionConfig
 
 
 
@@ -16,6 +17,16 @@ class ConfigurationManager:
             kaggle_dataset=config.kaggle_source_path,
             gdrive_dataset=config.gdrive_source_path,
             local_dataset=config.raw,
-            staging_dataset=config.interim
+            staging_dataset=config.interim,
+            staging_kaggle=config.interim_kaggle,
+            staging_gdrive=config.interim_gdrive
         )
         return data_ingestion
+    def get_data_storage_config(self)->DataStorageConnectionConfig:
+        config=self.config[0].sql
+        data_connection=DataStorageConnectionConfig(
+            server_name=config.server_name,
+            db_name=config.db_name,
+            driver_name=config.driver_name,
+            trusted_conn=config.trusted_conn
+        )

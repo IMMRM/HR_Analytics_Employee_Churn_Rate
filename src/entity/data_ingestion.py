@@ -23,6 +23,8 @@ class CustomerData:
     order_count: int
     days_since_last_order: int
     cashback_amount: float
+    source: str
+    last_updated_date: str
 
 @dataclass
 class DataIngestionConfig:
@@ -30,6 +32,8 @@ class DataIngestionConfig:
     gdrive_dataset: str
     local_dataset: str
     staging_dataset: str
+    staging_kaggle: str
+    staging_gdrive: str
     
     
     

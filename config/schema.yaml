@@ -1,1 +1,3 @@
-key: "abc"
+sql_table_schemas:
+  create_db: "sdfsf"
+  
