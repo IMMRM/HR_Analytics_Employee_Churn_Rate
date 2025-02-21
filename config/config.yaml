@@ -1,0 +1,11 @@
+
+data:
+  raw: "data/raw/"
+  processed: "data/processed/"
+  interim: "data/interim/"
+  external: "data/external/"
+  kaggle_source_path: "ankitverma2010/ecommerce-customer-churn-analysis-and-prediction"
+  gdrive_source_path: "https://drive.google.com/uc?id=1L33uQvZl0D2gNnu79tbJnjuX0ZAzr9_C"
+  
+  
+
