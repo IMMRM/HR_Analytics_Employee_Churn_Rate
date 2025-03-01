@@ -8,6 +8,7 @@ data:
   gdrive_source_path: "https://drive.google.com/uc?id=1L33uQvZl0D2gNnu79tbJnjuX0ZAzr9_C"
   interim_kaggle: "data/interim/kaggle/"
   interim_gdrive: "data/interim/gdrive/"
+  models: "models/"
 
 sql:
   server_name: "localhost\\SQLEXPRESS"
@@ -16,6 +17,11 @@ sql:
   trusted_conn: "yes"
   kaggle_table_name: "[kaggle].[EComm_Churn_Data_raw]"
   gdrive_table_name: "[gdrive].[EComm_Churn_Data_raw]"
+
+data_validation:
+  data_source_kaggle: "data/interim/kaggle/"
+  data_source_gdrive: "data/interim/gdrive/"
+  STATUS_REPORT_FILE: "uncommitted/data_docs/local_site/"
 
 
 

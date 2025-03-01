@@ -2,6 +2,8 @@ from src.constants import CONFIG_PATH,PARAMS_PATH,SCHEMA_PATH
 from src.utils.common import read_yaml
 from src.entity.data_ingestion import DataIngestionConfig
 from src.entity.data_storage import DataStorageConnectionConfig
+from src.entity.data_validation import DataValidationConfig
+from src.entity.data_preparations import DataPreparationConfig
 
 
 
@@ -30,3 +32,23 @@ class ConfigurationManager:
             driver_name=config.driver_name,
             trusted_conn=config.trusted_conn
         )
+    def get_data_validation_config(self)->DataValidationConfig:
+        config=self.config[0].data_validation,
+        schema=self.schema.COLUMNS
+        data_validation=DataValidationConfig(
+            data_source_path_kaggle=config[0].data_source_kaggle,
+            data_source_path_gdrive=config[0].data_source_gdrive,
+            Status_report=config[0].STATUS_REPORT_FILE,
+            all_schema=schema
+        )
+        return data_validation
+    def get_data_preparation_config(self)->DataPreparationConfig:
+        config=self.config[0].data
+        data_preparation=DataPreparationConfig(
+            kaggle=config.interim_kaggle,
+            gdrive=config.interim_gdrive,
+            models_path=config.models,
+            processed=config.processed
+        )
+        return data_preparation
+        
