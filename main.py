@@ -3,6 +3,7 @@ from src.pipelines.data_ingestion import DataIngestion
 from src.pipelines.raw_data_storage import RawDataStorage
 from src.pipelines.data_validation import DataValidation
 from src.pipelines.data_preparations import DataPreparation
+from src.pipelines.data_transform_storage import DataTransformationStorage
 
 logger.info(">>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion >>>>>>>>>>>>>>>>>>>>>>>>>>")
 #1. Data Ingestion
@@ -42,4 +43,12 @@ try:
     data_prep.run_data_preparations()
 except Exception as e:
     raise e
-    
+
+#5. Run Data Transformation and Storage
+logger.info(">>>>>>>>>>>>>>>>>>>>> Data Transformations and Storage >>>>>>>>>>>>>>>")
+data_trans=DataTransformationStorage()
+logger.info("Data Transformation Started")
+try:
+    data_trans.data_transformation()
+except Exception as e:
+    raise e

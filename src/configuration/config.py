@@ -27,11 +27,11 @@ class ConfigurationManager:
     def get_data_storage_config(self)->DataStorageConnectionConfig:
         config=self.config[0].sql
         data_connection=DataStorageConnectionConfig(
-            server_name=config.server_name,
-            db_name=config.db_name,
-            driver_name=config.driver_name,
-            trusted_conn=config.trusted_conn
+            db_path=config.db_path,
+            processed=config.processed,
+            data_table_name=config.data_table_name
         )
+        return data_connection
     def get_data_validation_config(self)->DataValidationConfig:
         config=self.config[0].data_validation,
         schema=self.schema.COLUMNS

@@ -11,12 +11,9 @@ data:
   models: "models/"
 
 sql:
-  server_name: "localhost\\SQLEXPRESS"
-  db_name: "Ecommerce_db"
-  driver_name: "{ODBC Driver 17 for SQL Server}"
-  trusted_conn: "yes"
-  kaggle_table_name: "[kaggle].[EComm_Churn_Data_raw]"
-  gdrive_table_name: "[gdrive].[EComm_Churn_Data_raw]"
+  db_path: "config/churn_data.db"
+  processed: "data/processed/"
+  data_table_name: "transformed_churn_data"
 
 data_validation:
   data_source_kaggle: "data/interim/kaggle/"
