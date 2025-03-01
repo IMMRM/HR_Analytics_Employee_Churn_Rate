@@ -1,22 +1,22 @@
 {
   "data": {
     "asset": {
-      "id": "71181bf9-9d6a-434e-abf3-ca282ee6fcd5",
+      "id": "925b5880-28d4-43bd-802d-9f071ac77c29",
       "name": "churn_data_asset"
     },
     "batch_definition": {
-      "id": "e353596d-9dbd-4522-8630-e468dc57312c",
+      "id": "58db047e-6a57-4a59-b8ee-92871853ef1c",
       "name": "bulk batch"
     },
     "datasource": {
-      "id": "10912afa-6289-46ae-9654-4eb2072f17db",
+      "id": "98740568-3658-4e62-af63-6832f372d608",
       "name": "churn_data_source"
     }
   },
-  "id": "c9f7aae7-5069-4ed7-905f-6f77a03efd85",
+  "id": "e66eef12-6e16-4245-8b27-ae709d30d9db",
   "name": "dataset_types",
   "suite": {
-    "id": "81313de9-5a72-4775-86f4-504e0570734c",
+    "id": "e4e67e8d-9305-4c9c-bda4-ad6063f6d8e3",
     "name": "Data Type Check Suite"
   }
 }

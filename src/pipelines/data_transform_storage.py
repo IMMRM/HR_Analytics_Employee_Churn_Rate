@@ -4,6 +4,7 @@ import pyodbc
 from src.logger import logger
 import sqlite3
 from src.configuration.config import ConfigurationManager
+from datetime import datetime
 
 class DataTransformationStorage:
     def __init__(self):
@@ -59,6 +60,10 @@ class DataTransformationStorage:
         try:
             logger.info("Transformed Data Storage Started!")
             self.store_in_sql(df)
+            # Add a synthetic event timestamp (assuming data is recent)
+            df["event_timestamp"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+            df["event_timestamp"] = pd.to_datetime(df["event_timestamp"]).dt.tz_localize("UTC")
+            df.to_parquet(self.config.processed+"transformed_churn_data.parquet")
             logger.info("Transformed Data Storage Completed!")
         except Exception as e:
             raise e
