@@ -4,6 +4,7 @@ from src.pipelines.raw_data_storage import RawDataStorage
 from src.pipelines.data_validation import DataValidation
 from src.pipelines.data_preparations import DataPreparation
 from src.pipelines.data_transform_storage import DataTransformationStorage
+from src.pipelines.feature_store_retrival import FeatureRetrival
 
 logger.info(">>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion >>>>>>>>>>>>>>>>>>>>>>>>>>")
 #1. Data Ingestion
@@ -52,3 +53,13 @@ try:
     data_trans.data_transformation()
 except Exception as e:
     raise e
+
+#6. Run Feature Retrival from feature store
+logger.info(">>>>>>>>>>>>>>>>>>>>> Feature Retrival from feature store >>>>>>>>>>>>>>>")
+feat_ret=FeatureRetrival()
+logger.info("Feature Retrival Started")
+try:
+    feat_ret.retrieve_features()
+    logger.info("Feature Retrieval Completed!")
+except Exception as e:
+    raise logger.error(f"Failure for feature retrieval :{e}")

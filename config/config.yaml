@@ -20,6 +20,9 @@ data_validation:
   data_source_gdrive: "data/interim/gdrive/"
   STATUS_REPORT_FILE: "uncommitted/data_docs/local_site/"
 
+feature_store_repo:
+  repo_path: "churn_feature_store/feature_repo/"
+
 
 
   

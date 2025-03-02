@@ -4,6 +4,7 @@ from src.entity.data_ingestion import DataIngestionConfig
 from src.entity.data_storage import DataStorageConnectionConfig
 from src.entity.data_validation import DataValidationConfig
 from src.entity.data_preparations import DataPreparationConfig
+from src.entity.feature_store import FeatureRetrivalConfig
 
 
 
@@ -51,4 +52,10 @@ class ConfigurationManager:
             processed=config.processed
         )
         return data_preparation
+    def get_feature_config(self)->FeatureRetrivalConfig:
+        config=self.config[0].feature_store_repo
+        feature_config=FeatureRetrivalConfig(
+            repo_path=config.repo_path
+        )
+        return feature_config
         

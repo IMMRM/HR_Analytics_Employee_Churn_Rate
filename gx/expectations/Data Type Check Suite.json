@@ -1,7 +1,7 @@
 {
   "expectations": [
     {
-      "id": "b9f5c2b3-d9f6-4ce3-9eda-3cd42833fc0a",
+      "id": "4fce1050-3c34-4490-b3c0-9fa365d98a79",
       "kwargs": {
         "column": "CustomerID",
         "type_": "int64"
@@ -10,7 +10,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "9e906473-0757-44a8-999b-96391469b63b",
+      "id": "30149d67-ccc3-40c7-a298-771d5efb01f4",
       "kwargs": {
         "column": "Churn",
         "type_": "int64"
@@ -19,7 +19,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "6615306d-c1eb-4aaa-8b06-07b4aa444279",
+      "id": "e545e371-7e51-4892-a57a-dfe07ed1ae7c",
       "kwargs": {
         "column": "Tenure",
         "type_": "float64"
@@ -28,7 +28,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "4aaa23b8-9982-4d17-9cfc-baf92528a589",
+      "id": "5e9aeb29-ec8c-4512-99d7-0377b4455759",
       "kwargs": {
         "column": "PreferredLoginDevice",
         "type_": "object"
@@ -37,7 +37,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "6e6b6e65-e938-4346-b863-e7e562912761",
+      "id": "0ee5dbf9-ca1b-4d2a-b4fe-fb2d2f4c0a36",
       "kwargs": {
         "column": "CityTier",
         "type_": "int64"
@@ -46,7 +46,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "87e923ad-38c2-476b-9f24-c725264bc2bc",
+      "id": "bd123db8-d244-476a-a3f4-df760ee55601",
       "kwargs": {
         "column": "WarehouseToHome",
         "type_": "float64"
@@ -55,7 +55,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "2b420c4f-d30a-4978-8368-066f92940195",
+      "id": "134bb64b-c731-47b6-bb4a-8d7203de72f2",
       "kwargs": {
         "column": "PreferredPaymentMode",
         "type_": "object"
@@ -64,7 +64,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "49f059c7-83b8-4e33-a7e2-fb4b76857b46",
+      "id": "212ac757-2c2a-424c-b513-2b0cebf648b7",
       "kwargs": {
         "column": "Gender",
         "type_": "object"
@@ -73,7 +73,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "43f9aaeb-bcf8-45bc-a460-ff23e1c1c1e7",
+      "id": "1425936f-b3e9-4325-9014-8b87ae16da9b",
       "kwargs": {
         "column": "HourSpendOnApp",
         "type_": "float64"
@@ -82,7 +82,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "86d8d8d3-e7e7-4e17-9f13-74453a219826",
+      "id": "5a80e072-edb3-4a09-b2c0-0d6a3bc80354",
       "kwargs": {
         "column": "NumberOfDeviceRegistered",
         "type_": "int64"
@@ -91,7 +91,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "9d124b31-e8ca-49ab-b657-832c6484b50f",
+      "id": "1b8eae4a-f040-44be-9b3d-6d9430b2b2b1",
       "kwargs": {
         "column": "PreferedOrderCat",
         "type_": "object"
@@ -100,7 +100,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "8ae23860-7073-4d7a-a2ee-7490119bce14",
+      "id": "1e89c544-cdff-43c5-8733-ffbcf0eb634d",
       "kwargs": {
         "column": "SatisfactionScore",
         "type_": "int64"
@@ -109,7 +109,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "7a1c05aa-73e0-431e-ae4f-a04a3f97df90",
+      "id": "5fe2efb0-d5e5-42b0-a9f2-edc6368c6538",
       "kwargs": {
         "column": "MaritalStatus",
         "type_": "object"
@@ -118,7 +118,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "9f9c77ed-2734-4c69-8944-5671887fb24a",
+      "id": "b808a1db-a6ff-4949-826a-0477798ba5e4",
       "kwargs": {
         "column": "NumberOfAddress",
         "type_": "int64"
@@ -127,7 +127,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "eeb05062-c3a9-46bf-8640-587ac115a2e0",
+      "id": "0d215a03-2d85-4950-8a3b-fa0e4541d6d4",
       "kwargs": {
         "column": "Complain",
         "type_": "int64"
@@ -136,7 +136,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "2ad0f3de-3d37-462a-ba6c-4a22a56d2818",
+      "id": "53892eee-d6f1-4b9d-9056-8f7eb7f9d18b",
       "kwargs": {
         "column": "OrderAmountHikeFromlastYear",
         "type_": "float64"
@@ -145,7 +145,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "a51decbe-d0d2-4ed3-b4c2-0049257c4b1a",
+      "id": "dfa2cc7c-4278-4a60-a10d-1b16df2d6b7c",
       "kwargs": {
         "column": "CouponUsed",
         "type_": "float64"
@@ -154,7 +154,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "28b80636-2ddb-4aaf-a40c-2b83820f06e3",
+      "id": "e1b54e93-9507-4e9b-be11-c1b8e6fafd21",
       "kwargs": {
         "column": "OrderCount",
         "type_": "float64"
@@ -163,7 +163,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "52b6e22d-d89f-4d27-9ea3-31aefea92ad9",
+      "id": "7caf0707-11d8-41ed-9817-c21347963082",
       "kwargs": {
         "column": "DaySinceLastOrder",
         "type_": "float64"
@@ -172,7 +172,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "651f923a-3f10-4497-9e6d-93ee64e2024f",
+      "id": "edfda2cc-d1b1-4d18-9aa2-37b6a7804445",
       "kwargs": {
         "column": "CashbackAmount",
         "type_": "float64"
@@ -181,7 +181,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "d131c7e8-e1c2-4772-bc98-1b986a3ab237",
+      "id": "c72a4451-4884-40df-be91-97bc78b2b315",
       "kwargs": {
         "column": "source",
         "type_": "object"
@@ -190,7 +190,7 @@
       "type": "expect_column_values_to_be_of_type"
     },
     {
-      "id": "d0878775-096e-46b1-b4c6-4abec3b10b20",
+      "id": "3802238c-98dc-49a7-9721-5c4393ab547f",
       "kwargs": {
         "column": "data_last_updated_dt",
         "type_": "object"
@@ -199,7 +199,7 @@
       "type": "expect_column_values_to_be_of_type"
     }
   ],
-  "id": "e4e67e8d-9305-4c9c-bda4-ad6063f6d8e3",
+  "id": "921c86ba-1501-4521-b987-4a1e79f0cd1c",
   "meta": {
     "great_expectations_version": "1.3.7"
   },

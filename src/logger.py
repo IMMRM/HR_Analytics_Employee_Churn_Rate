@@ -12,6 +12,8 @@ log_filepath=os.path.join(log_dir,f"log_{datetime.now().strftime('%Y-%m-%d_%H')}
 os.makedirs(log_dir,exist_ok=True)
 # Suppress Great Expectations INFO logs
 logging.getLogger("great_expectations").setLevel(logging.WARNING)
+# Suppress feast INFO logs
+logging.getLogger("feast").setLevel(logging.WARNING)
 logging.basicConfig(
     level=logging.INFO,
     format=logging_str,
